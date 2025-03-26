@@ -5,7 +5,7 @@ metadata:
   labels:
     app: frontend-ecomm
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: frontend-ecomm
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend-ecomm
-        image: darin04/frontend-ecomm:latest
+        image: ephrash1/frontend-ecomm:latest
         ports:
         - containerPort: 80
 ---
